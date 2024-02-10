@@ -1,13 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root{
+/* Global Variables */
+:root {
     /* Colors */
 
     /* Primary */
@@ -16,22 +17,18 @@
 
     /* Fonts */
 
-    --font-wght-400: 400;
-    --font-wght-600: 600;
-
     /* Headings */
     --font-family-Poppins: "Poppins", sans-serif;
 
     /* Body */
     --font-family-Open-Sans: "Open Sans", sans-serif;
 
-
-    /* Headings */
-
-
+    /* Weights */
+    --font-wght-400: 400;
+    --font-wght-600: 600;
 }
 
-body{
+body {
     display: grid;
     place-items: center;
     background: url('../images/bg-desktop.svg') no-repeat center center/cover;
@@ -39,107 +36,132 @@ body{
     font-family: var(--font-family-Open-Sans);
 }
 
-.container{
+/* Main container */
+.container {
     padding: 20px;
     width: 90vw;
 }
-.logo{
+
+/* Logo */
+.logo {
     margin: 3rem 0;
 }
-.logo img{
+
+.logo img {
     width: 200px;
     height: 50px;
 }
-.content-img{
+
+.content-img {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.img img{
+/* Image */
+.img img {
     width: 700px;
     height: 500px;
     margin-right: 3rem;
 }
-.content{
+
+/* Content */
+.content {
     padding: 3rem;
 }
-.content h1{
+
+.content h1 {
     font-size: 35px;
     line-height: 1.5;
     font-family: var(--font-family-Poppins);
     font-weight: var(--font-wght-600);
     color: white;
 }
-.content p{
+
+.content p {
     color: white;
     font-weight: var(--font-wght-400);
     margin-top: 10px;
 }
-.btn{
+
+.btn {
     text-align: center;
     font-weight: var(--font-wght-400);
     width: 150px;
     padding: 10px 20px;
     border-radius: 20px;
     background-color: white;
-    color: var(--Violet);  
+    color: var(--Violet);
     margin-top: 30px;
+    transition: all 0.3s ease-in-out;
 }
-.btn:hover{
+
+.btn:hover {
     cursor: pointer;
     color: white;
     background-color: var(--Soft-Magenta);
 }
-.social-media{
+
+/* Social Media */
+.social-media {
     color: white;
     float: right;
 }
-.center{
+
+.center {
     text-align: center;
     margin: 5px;
     padding: 15px;
 }
-.social-media i{
+
+.social-media i {
     width: 50px;
     height: 50px;
     border: 1px solid white;
     border-radius: 50%;
-}
-.social-media i:hover{
-    cursor: pointer;
-    color: var(--Soft-Magenta);
-    border:1px solid var(--Soft-Magenta);
+    transition: all 0.3s ease-in-out;
 }
 
-@media(max-width: 768px){
-    body{
+.social-media i:hover {
+    cursor: pointer;
+    color: var(--Soft-Magenta);
+    border: 1px solid var(--Soft-Magenta);
+}
+
+/* Media Query */
+@media(max-width: 768px) {
+    body {
         display: grid;
         place-items: center;
         background: url('../images/bg-mobile.svg') no-repeat center center/cover;
         background-color: var(--Violet);
         font-family: var(--font-family-Open-Sans);
     }
-    .container{
+
+    .container {
         width: 90vw;
     }
-    .logo img{
+
+    .logo img {
         width: 150px;
         height: 45px;
     }
-    .content-img{
+
+    .content-img {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    .img img{
+
+    .img img {
         width: 300px;
         height: 200px;
         margin-right: 0;
         margin-bottom: 50px;
     }
-    .content{
+
+    .content {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -147,14 +169,16 @@ body{
         text-align: center;
         padding: 0;
     }
-    .content h1{
+
+    .content h1 {
         font-size: 1.5rem;
         line-height: 1.5;
         font-family: var(--font-family-Poppins);
         font-weight: var(--font-wght-600);
         color: white;
     }
-    .social-media{
+
+    .social-media {
         margin-top: 20px;
         float: none;
         color: white;
@@ -162,15 +186,15 @@ body{
         justify-content: center;
         align-items: center;
     }
-    .center{
+
+    .center {
         text-align: center;
         margin: 5px;
         padding: 10px;
     }
-    .social-media i{
+
+    .social-media i {
         width: 35px;
         height: 35px;
     }
 }
-
-
