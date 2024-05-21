@@ -9,7 +9,10 @@ This is a solution to the [Huddle landing page with a single introductory sectio
 
 ![](./assets/images/screenshot.PNG)
 
-You can check it out live [here](https://xstephx.github.io/huddle-landing-page-with-a-single-introductory-section-challenge/).
+### Links
+
+- Solution URL: [here](https://www.frontendmentor.io/solutions/solution-huddle-landing-page-with-a-single-introductory-section-vC9_TbfgHB)
+- Live Site URL: [here](https://xstephx.github.io/huddle-landing-page-with-a-single-introductory-section-challenge/)
 
 ## My process
 
